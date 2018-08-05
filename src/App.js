@@ -4,12 +4,18 @@
 
 import React from 'react';
 import { Route } from "react-router-dom";
-import HomeView from '../src/views/home_view/home_view';
-import SearchView from '../src/views/search_view/search_view';
+import HomeView from '../src/views/home_view/homeView';
+import SearchView from '../src/views/search_view/searchView';
 import './App.css';
-// import * as BooksAPI from './BooksAPI'
+import * as BooksAPI from './BooksAPI'
 
 class App extends React.Component {
+
+  componentDidMount() {
+    BooksAPI.getAll()
+      .then(books => console.log(books))
+      .catch(error => console.error("Failed to fetch books", error));
+  }
 
   render() {
     return (
