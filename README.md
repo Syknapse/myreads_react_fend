@@ -27,6 +27,8 @@ To use this app simply:
 + Now you are ready to run the project. Type `npm start` which should start the server and open `http://localhost:3000/` in your browser.
 + You are all set up and ready to play around with it.
 
+![image](https://user-images.githubusercontent.com/29199184/43993662-6f32b76a-9d91-11e8-9e25-56fd56e4f0a2.png)
+
 ## Acknowledgements
 
 Huge thanks to 
